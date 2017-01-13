@@ -1,0 +1,98 @@
+
+	
+	#icon{
+		float: left;
+		margin-left:400px;
+	}
+	a{
+		font-family: 'Lobster';
+		color: white;
+	}
+
+	.header a:hover{
+		background-color: red;
+	}
+		
+		 h1{
+			font-family: 'Lobster';
+			
+			font-size: 35px;
+		}
+		
+		
+		.menu{
+			height: 100px;
+			text-align: bottom;
+		}
+
+			p{
+				font-family: 'Arima Madurai';
+				text-align: center;
+				font-weight: bold;
+			}
+			
+		.fluidcard{
+			margin-top: 20px;
+			padding-top: 20px;
+			padding-right: 40px;
+		}
+		.description{
+			font-family:'Lobster';
+			text-align: center;
+		}
+		button{
+			padding-left: 70px;
+		}
+		.banner {
+			margin-top: 129px;
+			margin-bottom: 20px;
+			min-height: 700px;
+    background-image: url('../images/starwars.jpg')!important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.bannerh1{
+	
+	font-size: 50px;
+	background-color:rgba(0, 0, 0,0.5);
+	color: #920101;
+	text-align: center;
+	
+}
+
+.introduction{
+
+
+	padding-top: 30em;
+	padding-right: 2em;
+	padding-left: 2em;
+	    text-align: center;
+}
+.introduction h1{
+	height: 10px;
+	padding:50px;
+	 
+	
+}
+
+.header h3{
+	
+	margin-top: 50px;
+	padding-top: 10px;
+
+}
+ #img{
+	height: 100px;
+	width: 300px;
+}
+header{
+	background-color:#5a5a58; 
+	margin-top: 100px;
+}
+h1{
+	font-family: 'Arima Madurai';
+}
+	

@@ -1,0 +1,205 @@
+<html>
+<head>
+	<title>FORM</title>
+	<link rel="stylesheet" type="text/css" href="D:\workspace\semantic\dist\semantic.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="D:\workspace\semantic\dist\components\form.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<style type="text/css">
+		body{
+			background: url('images/starwars.jpg');
+			background-repeat: no-repeat;
+			
+
+		.form{
+			font-weight: bolder;
+			margin-top: 30px;
+			background-color:white;
+			padding-bottom: 20px;
+			padding-right: 20px;
+			padding-left:20px;
+			
+		}
+		label{
+			font-color: white;
+		}
+		h1{
+			font-size: 30px;
+			font-weight: bold;
+		}
+	</style>
+
+
+</head>
+<body>
+	<div class="ui container">
+			<h1 align="center" style="font-family:Lobster;">SignIn Form</h1>
+
+		<div class="ui one column center aligned grid">
+			<div class="column six wide form-holder">
+				<form action="" class="ui form">
+					<div class="ui error message"></div>
+					<div class="field">
+		    			<label >Name</label>
+		    			<input type="text" id="name" placeholder="Name">
+		  			</div>
+		  			<div class="field">
+		    			<label for id="age">Age</label>
+		    			<input type="text" name="age" placeholder="agw">
+		  			</div>
+		  			<div class="field">
+		    			<label for="gender">Gender</label>
+		     			<select class="ui dropdown" id="gender">
+		        			<option value="">Gender</option>
+		        			<option value="male">Male</option>
+		        			<option value="female">Female</option>
+		      				</select>
+		  			</div>
+		  			<div class="field">
+		    			<label for="email">Email ID</label>
+		    			<input type="Email" id="email" placeholder="Email Id">
+		  			</div>
+		  			<div class="field">
+		    			<label for="password">Password</label>
+		    			<input type="password" id="password" placeholder="Psssword">
+		  			</div>
+		  			<div class="field">
+		    			<label for="confirmpassword">Confirm Password</label>
+		    			<input type="password" id="confirmpassword" placeholder="confirm password">
+		  			</div>
+		  			<center>		
+		  			<div class="ui primary submit button" id="submit">submit</div></center>
+		  			
+				</form>
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript">
+			$('#submit').click(function(){
+			$('.ui.form').form(
+			{
+				on: 'blur',
+				inline: true,
+    			fields: 
+    			{
+      				name: 
+      				{
+	        			identifier: 'name',
+	        			rules: 
+	        			[
+		         			{
+		            			type   : 'empty',
+		            			prompt : 'Please enter your name'
+		          			},
+		          			{
+		          				type   :  'minLength[2]',
+		            			prompt : 'Name cannot be less than 2 characters'
+	        				}
+	        			]
+        			},
+        			age: 
+      				{
+	        			identifier: 'age',
+	        			rules: 
+	        			[
+		         			{
+		            			type   : 'empty',
+		            			prompt : 'Please enter your age'
+		          			},
+		          			{
+		          				type   : 'integer',
+            					prompt : 'Please enter an integer value'
+		          			},
+		          			{
+		          				type   : 'integer[1..100]',
+            					prompt : 'Age should be in between 1 and 100'
+		          			}
+	        			]
+        			},
+        			gender: 
+        			{
+        				identifier: 'gender',
+        				rules: 
+        				[
+         			 		{
+            					type   : 'empty',
+            					prompt : 'Please select a gender'
+          					}
+        				]
+      				},
+      				email:
+      				{
+        				identifier: 'email',
+        				rules: 
+        				[
+         			 		{
+            					type   : 'empty',
+            					prompt : 'Please enter your email'
+          					},
+          					{
+          						type   :  'email',
+          						prompt :  'Enter valid email address'
+          					}
+
+        				]
+      				},
+      				password:
+      				{
+        				identifier: 'password',
+        				rules: 
+        				[
+         			 		{
+            					type   : 'empty',
+            					prompt : 'Please enter your password'
+          					},
+          					{
+		          				type   :  'minLength[5]',
+		            			prompt : 'Password cannot be less than 5 characters'
+	        				},
+	        				{
+		          				type   :  'maxLength[15]',
+		            			prompt : 'password cannot be more than 15 characters'
+	        				}
+
+        				]
+      				},
+      				confirmpassword:
+      				{
+        				identifier: 'confirmpassword',
+        				rules: 
+        				[
+         			 		{
+            					type   : 'empty',
+            					prompt : 'Please enter your confirmpassword'
+          					},
+          					{
+		          				type   :  'minLength[5]',
+		            			prompt : 'Confirm Password cannot be less than 5 characters'
+	        				},
+	        				{
+		          				type   :  'maxLength[15]',
+		            			prompt : 'Confirm Password cannot be more than 15 characters'
+	        				},
+          					{
+		          				type   :  'match[password]',
+		            			prompt : 'Password and confirm password should be same'
+	        				}
+        				]
+      				},
+      				checkbox:
+      				{
+      					identifier: 'checkbox',
+      					rules:
+      					[
+      						{
+      							type   :  'checked',
+      							prompt :  'Please click the checkbox'	
+      						}
+      					]
+      				}	
+      			}
+      		})});
+		</script>
+</body>
+</html>
