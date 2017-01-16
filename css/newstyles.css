@@ -22,6 +22,7 @@
 		
 		.menu{
 			height: 100px;
+			margin-bottom: 0px;
 			text-align: bottom;
 		}
 
@@ -44,8 +45,7 @@
 			padding-left: 70px;
 		}
 		.banner {
-			margin-top: 129px;
-			margin-bottom: 20px;
+			
 			min-height: 700px;
     background-image: url('../images/starwars.jpg')!important;
     background-position: 50% 50%;
@@ -65,7 +65,7 @@
 
 .introduction{
 
-
+	/*margin-top: 8em;*/
 	padding-top: 30em;
 	padding-right: 2em;
 	padding-left: 2em;
@@ -76,6 +76,12 @@
 	padding:50px;
 	 
 	
+}
+.push{
+
+
+	margin-top: 130px;
+	margin-bottom: 20px;
 }
 
 .header h3{
@@ -89,10 +95,7 @@
 	width: 300px;
 }
 header{
-	background-color:#5a5a58; 
+	background-color 
 	margin-top: 100px;
-}
-h1{
-	font-family: 'Arima Madurai';
 }
 	

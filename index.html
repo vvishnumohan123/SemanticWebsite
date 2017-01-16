@@ -3,29 +3,33 @@
 	<title>Semantic UI</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="../dist/semantic.min.js"></script>
+	<script src="./dist/semantic.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/newstyles.css">
-	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="./dist/semantic.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
 
 </head>
-    	<body style="background-color: #5a5a58;">
+    	<body  style="background-color:#5a5a58;" >
     		
           <!--top menuu-->
-          			<div class="ui sidebar vertical left  menu mobile only" style="font-family: 'Lobster', cursive;background-color:#5a5a58; ">
+          			
+                <div class="ui stackable basic icon top fixed compact menu mobile only" style="font-family: 'Lobster', cursive;height:100px;background-color:black;
+                padding-top:30px;">
+              
+                            <a id="toggle" class="item" style="color:white;font-family: 'Lobster', cursive;background-color:black;margin-left:30px">
+                                  Menu <i class="sidebar large icon"></i>
+                                 
+                            </a>
+                            <div class="ui sidebar vertical left  menu mobile only" style="font-family: 'Lobster', cursive;margin-top:10px; ">
                     <a href="#" class="item">Home</a>
                     <a href="#" class="item">aboutus</a>
                     <a href="#" class="item">contact us</a> 
                     <a href="#" class="item">Log Out</a>
                 </div>
-                <div class="ui stackable basic icon top fixed menu mobile only" style="font-family: 'Lobster', cursive;background-color:#5a5a58;">
-                            <a id="toggle" class="item" style="color:white;font-family: 'Lobster', cursive;background-color:#5a5a58;">
-                                  <i class="sidebar icon"></i>
-                                  Menu
-                            </a>
                 </div>
               <script>
                   $('.ui.sidebar').toggle(); 
@@ -38,7 +42,7 @@
 
           <header class="ui grid computer only"> 
               <div class="ui menu fixed">
-                  <div class="ui small fixed secondary  menu"  >
+                  <div class="ui small fixed secondary compact menu"  >
                     		<h1>
                           <img class="ui left floated image dummy" src="images/EA-Logo.jpg" alt="No Image" style="height:100px;width:100px;">
                         </h1>
@@ -57,7 +61,7 @@
                       <a class="right item">
                          <i class="Announcement big icon"></i>
                         <h1 style="font-family: 'Lobster', cursive;letter-spacing:2px;font-size:15px;">
-                          Messages
+                          Announcments
                         </h1>
                       </a>
                       
@@ -86,11 +90,11 @@
           <!-- ALBUM -->
 
           		<div class="push">
-            			<div class="banner ">
-            				<div class="ui banner content">
+            			<div class="ui  computer only banner ">
+            				<div class="ui banner content ">
             					<div class="introduction">
-            						<h1 class="ui header">
-            							<span class="bannerh1" style="font-family: 'Permanent Marker';">lookin for games ??</span>
+            						<h1 class="ui header" style="font-family: 'Chewy', cursive;font-size:70px;color:#880404;">
+            							ARE U A GAMING FREAK??
             						</h1>
             					</div>
             				</div>
@@ -98,6 +102,14 @@
             			</div>
             	</div>
             	
+             
+
+
+
+
+
+
+
           <!-- cards-->
 
 
@@ -140,6 +152,8 @@
           	  
           	</div>	
           </div>
+         
+
           <!-- second row cards -->
           <div class="ui container" style="padding-top:20px;">
           	<h1 style="font-size: 70px;font-family: 'Lobster';">top Games</h1>
@@ -202,20 +216,26 @@
           	  </div>
           	  
 
-          	  <div class="eight wide column" style="background-color:#5a5a58;">
-          	  	<h1>more games</h1>
-          	  	<div  style="background-color:#5a5a58;">
-          	  		<h1><a href="#">games for kids</a></h1>
-                     <img src="images/mario.jpg" style="height:200px;width:500px;">
+          	  <div class="eight wide column" >
+          	  	<h1 style="text-align:center; font-size:60px;font-family: 'Lobster';">more games</h1>
+          	  	<div  >
+                 
+              	  		<h1><a href="#">games for kids</a></h1>
+                         <img src="images/mario.jpg" style="height:200px;">
+                       
                   </div>
           	  	
-          	  		<div  style="background-color:#5a5a58;" >
-          	  			<h1><a href="#">games for boys</a></h1>
-                    <img src="images/assasins.jpg" style="height:200px;width:500px;">
+          	  		<div   >
+                    
+            	  			<h1><a href="#">games for boys</a></h1>
+                      <img src="images/assasins.jpg" style="height:200px;">
+                    
                   </div>
-          	  		<div  style="background-color:#5a5a58;">
-          	  			<h1><a href="#">games for girls</a></h1>
-                       <img src="images/candycruh.jpg" style="height:250px;width:510px;">
+          	  		<div  >
+                   
+              	  			<h1><a href="#">games for girls</a></h1>
+                           <img src="images/candycruh.jpg" style="height:200px;width:359.89px">
+                         
                   </div>
 
           	  </div>
@@ -249,8 +269,8 @@
                   		<div class="eight wide column">
                     			<footer>
                             	<div class="copyright">
-                            		 	<p>Copyrights © 2014 All Rights Reserved by Canvas Inc.
-                            		 	<a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></p>
+                            		 	<p>Copyrights © 2014 All Rights Reserved by EA SPORTS Inc.
+                            		 	<a href="#">Terms of Use</a>/<a href="#">Privacy Policy</a></p>
                             	 </div>
                           </footer>
                   	   </div>
